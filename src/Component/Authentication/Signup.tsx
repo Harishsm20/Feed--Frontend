@@ -9,23 +9,40 @@ import facebook from '../../assets/Images/IconSvg/facebook.png';
 import github from '../../assets/Images/IconSvg/github.png';
 import microsoft from '../../assets/Images/IconSvg/microsoft.png';
 
-const Login = () => {
+const Signup = () => {
   return (
     <div className='flex justify-center items-center min-h-screen bg-gradient-to-r from-[#333300] to-[#333300]'>
       <div className='flex bg-gradient-to-b from-[#534825] to-[#4f4e4a] rounded-3xl shadow-lg max-w-4xl w-full p-8'>
-        <div className='grid grid-cols-2 gap-3 size-6/12'>
-          <img src={img1} alt='Image 1' className='rounded-lg' />
-          <img src={img2} alt='Image 2' className='rounded-lg' />
-          <img src={img3} alt='Image 3' className='rounded-lg' />
-          <img src={img4} alt='Image 4' className='rounded-lg' />
-          <div className='col-span-2 flex justify-center'>
-            <img src={img5} alt='Image 5' className='rounded-lg' />
-          </div>
-        </div>
-        <div className='flex-1 flex flex-col justify-center p-8'>
+      <div className='flex-1 flex flex-col justify-center p-8'>
           <div className='text-left mb-6'>
-            <h2 className='text-4xl font-semibold text-[#e0e0e0]'>Sign In</h2>
+            <h2 className='text-4xl font-semibold text-[#e0e0e0]'>Sign Up</h2>
             <h3 className='text-lg text-[#cccccc]'>to your account</h3>
+          </div>
+          <div className='mb-4 flex'>
+          <div className='flex-1 mr-2'>
+    <label className='block text-[#cccccc] pl-1' htmlFor='firstName'>
+      First Name:
+    </label>
+    <input
+      type='text'
+      id='firstName'
+      className='glassmorphism-input mt-1 w-half p-2 border rounded-2xl text-[#e0e0e0] placeholder-[#cccccc] focus:outline-none focus:ring-2 focus:ring-[#e0e0e0]'
+      placeholder='Enter Your First Name'
+    />
+  </div>
+  
+  {/* Right column for last name */}
+  <div className='flex-1 ml-2'>
+    <label className='block text-[#cccccc] pl-1' htmlFor='lastName'>
+      Last Name:
+    </label>
+    <input
+      type='text'
+      id='lastName'
+      className='glassmorphism-input mt-1 w-half p-2 border rounded-2xl text-[#e0e0e0] placeholder-[#cccccc] focus:outline-none focus:ring-2 focus:ring-[#e0e0e0]'
+      placeholder='Enter Your Last Name'
+    />
+  </div>
           </div>
           <div className='mb-4'>
             <label className='block text-[#cccccc] pl-1' htmlFor='email'>
@@ -51,14 +68,11 @@ const Login = () => {
           </div>
           <div className='mb-4 flex justify-between items-center'>
             <div className='flex items-center'>
-              <input type='checkbox' id='remember' name='remember' className='opacity-50 mt-1 mr-1 border rounded-2xl' />
+              <input type='checkbox' id='remember' name='accept' className='opacity-50 mt-1 mr-1 border rounded-2xl' />
               <label htmlFor='remember' className='text-[#cccccc]'>
-                Remember me
+                I agree to all terms & conditions
               </label>
             </div>
-            <a href='#' className='text-[#cccccc] hover:underline'>
-              Forget Password
-            </a>
           </div>
           <div className='mb-6'>
             <button className='w-full py-2 bg-[#b8a500] text-white rounded-2xl hover:bg-[#e0e0e0] hover:text-[#b8a500] transition duration-200'>
@@ -74,9 +88,19 @@ const Login = () => {
             </div>
           </div>
         </div>
+        <div className='grid grid-cols-2 gap-3 size-6/12'>
+          <img src={img1} alt='Image 1' className='rounded-lg' />
+          <img src={img2} alt='Image 2' className='rounded-lg' />
+          <img src={img3} alt='Image 3' className='rounded-lg' />
+          <img src={img4} alt='Image 4' className='rounded-lg' />
+          <div className='col-span-2 flex justify-center'>
+            <img src={img5} alt='Image 5' className='rounded-lg' />
+          </div>
+        </div>
+        
       </div>
     </div>
   );
 };
 
-export default Login;
+export default Signup;
