@@ -1,13 +1,12 @@
-import React,{ useState } from 'react'
-
+// import React,{ useState } from 'react'
+import Login from '../src/Component/Authentication/Login'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
 
-    <div>
-      hii
+    <div className=''>
+      <Login />
     </div>
   )
 }
