@@ -1,16 +1,20 @@
-import Home from "./views/home";
-import Login from "./views/login";
-import { BrowserRouter,Route,Routes } from "react-router-dom";
+// import React,{ useState } from 'react'
+import Login from '../src/Component/Authentication/Login'
+import Signup from './Component/Authentication/Signup'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function App() {
 
   return (
-    <BrowserRouter basename="/">
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-      </Routes>
-    </BrowserRouter>
+    <Router>
+        <li><Link to="/login">Login</Link></li>
+        <li><Link to="/signup">Signup</Link></li>
+        <Routes>
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
+        </Routes>
+    </Router>
   )
 }
 
