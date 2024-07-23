@@ -18,8 +18,8 @@ const Signup = () => {
             <h2 className='text-4xl font-semibold text-[#e0e0e0]'>Sign Up</h2>
             <h3 className='text-lg text-[#cccccc]'>to your account</h3>
           </div>
-          <div className='mb-4 flex'>
-          <div className='flex-1 mr-2'>
+          <div className='mb-4 flex justify-between'>
+          <div className='flex-1 mr-2 '>
     <label className='block text-[#cccccc] pl-1' htmlFor='firstName'>
       First Name:
     </label>
@@ -80,7 +80,7 @@ const Signup = () => {
             </button>
             <p className='mt-4 text-center text-[#cccccc]'>or continue with</p>
             <div className='flex justify-center space-x-4 mt-4'>
-              <img src={google} alt='Google' className='w-8 h-8' />
+              <img src={google} alt='Google' className='w-8 h-8 grayscale hover:grayscale-0' />
               <img src={apple} alt='Apple' className='w-8 h-8' />
               <img src={microsoft} alt='GitHub' className='w-8 h-8' />
               <img src={facebook} alt='Facebook' className='w-8 h-8' />
