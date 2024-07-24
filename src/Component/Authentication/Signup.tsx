@@ -12,7 +12,7 @@ import microsoft from '../../assets/Images/IconSvg/microsoft.png';
 const Signup = () => {
   return (
     <div className='flex justify-center items-center min-h-screen bg-gradient-to-r from-[#333300] to-[#333300]'>
-      <div className='flex bg-gradient-to-b from-[#534825] to-[#4f4e4a] rounded-3xl shadow-lg max-w-5xl w-full p-8'>
+      <div className='flex bg-gradient-to-b from-[#534825] to-[#4f4e4a] rounded-3xl shadow-lg max-w-5xl w-full px-8 py-4'>
       <div className='flex-1 flex flex-col justify-center p-8'>
           <div className='text-left mb-6'>
             <h2 className='text-4xl font-semibold text-[#e0e0e0]'>Sign Up</h2>
@@ -85,7 +85,7 @@ const Signup = () => {
               </label>
             </div>
           </div>
-          <div className='mb-6'>
+          <div className=''>
             <button className='w-full py-2 bg-[#b8a500] text-white rounded-2xl hover:bg-[#e0e0e0] hover:text-[#b8a500] transition duration-500'>
               Sign Up
             </button>
@@ -99,8 +99,10 @@ const Signup = () => {
               <img src={microsoft} alt='GitHub' className='w-8 h-8 grayscale hover:grayscale-0 hover:-translate-y-2 transition-all duration-500' />
             </div>
           </div>
+          <p className='text-white text-center mt-2'>Already have an account? <a href='/login' className='underline' >Login</a></p>
         </div>
-        <div className='grid grid-cols-2 grid-rows-2 gap-3 size-6/12'>
+
+        <div className='grid grid-cols-2 grid-rows-2 gap-3 size-6/12 mt-4'>
           <div className='row-span-2'>
           <img src={img1} alt='Image 1' className='rounded-lg hover:-translate-y-2 transition-all duration-500 h-full' />    
           </div>

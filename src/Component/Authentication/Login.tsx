@@ -74,6 +74,7 @@ const Login = () => {
               <img src={microsoft} alt='GitHub' className='w-8 h-8 grayscale hover:grayscale-0 hover:-translate-y-2 transition-all duration-500' />
             </div>
           </div>
+          <p className='text-white text-center'>Don't have an Account? <a href='/signup' className='underline' >Sign Up</a></p>
         </div>
       </div>
     </div>
