@@ -1,3 +1,4 @@
+import loadereffect from '../loadereffect';
 import img1 from '../../assets/Images/LoginImg/login1.png';
 import img2 from '../../assets/Images/LoginImg/login2.png';
 import img3 from '../../assets/Images/LoginImg/login3.png';
@@ -14,7 +15,6 @@ const Login = () => {
             <div className='row-span-2 '>
             <img src={img1} alt='Image 1' className='rounded-lg hover:-translate-y-2 transition-all duration-500 h-full' />    
             </div>
-            
             <div className='row-span-1'>
             <img src={img2} alt='Image 1' className='rounded-lg hover:-translate-y-2 transition-all duration-500 h-full' />    
             </div>
@@ -80,4 +80,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default loadereffect(Login);

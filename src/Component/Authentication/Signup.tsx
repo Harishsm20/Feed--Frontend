@@ -1,3 +1,4 @@
+import loadereffect from '../loadereffect';
 import img1 from '../../assets/Images/LoginImg/signup1.png';
 import img2 from '../../assets/Images/LoginImg/signup2.png';
 import img3 from '../../assets/Images/LoginImg/signup3.png';
@@ -28,8 +29,6 @@ const Signup = () => {
       placeholder='Enter Your First Name'
     />
   </div>
-  
-  {/* Right column for last name */}
   <div className='flex-1 ml-2'>
     <label className='block text-[#cccccc] pl-1' htmlFor='lastName'>
       Last Name:
@@ -121,4 +120,4 @@ const Signup = () => {
   );
 };
 
-export default Signup;
+export default loadereffect(Signup);
