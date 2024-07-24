@@ -2,7 +2,6 @@
 import { FaSearch } from "react-icons/fa";
 import { BiBookAdd } from "react-icons/bi";
 import { FaBell } from "react-icons/fa";
-import Profile from './../Profile/Profile';
 
 
 
@@ -25,14 +24,15 @@ const NavBar = () => {
         <div className="rounded-full border-2 w-12 h-12 flex items-center justify-center">
             P
         </div>
-
-        {/* <div className="flex items-center w-20 justify-center py-2 bg-[#b8a500] text-white rounded-2xl hover:bg-[#e0e0e0] hover:text-[#b8a500] transition duration-500  p-2">
+        <a href="/login">
+        <div className="flex items-center w-20 justify-center py-2 bg-[#b8a500] text-white rounded-2xl hover:bg-[#e0e0e0] hover:text-[#b8a500] transition duration-500  p-2">
             Sign In
-        </div> */}
+        </div>
+        </a>
     </div>
     
     </div>
   )
 }
 
-export default NavBar 
+export default NavBar;

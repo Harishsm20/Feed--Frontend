@@ -1,3 +1,4 @@
+import loadereffect from '../loadereffect';
 // import React from 'react'
 import NavBar from '../NavBar/NavBar'
 
@@ -9,4 +10,4 @@ const Profile = () => {
   )
 }
 
-export default Profile
+export default loadereffect(Profile);
