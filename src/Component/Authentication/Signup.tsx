@@ -1,9 +1,7 @@
-import img1 from '../../assets/Images/LoginImg/img-32.png';
-import img2 from '../../assets/Images/LoginImg/img-33.png';
-import img3 from '../../assets/Images/LoginImg/img-34.png';
-import img4 from '../../assets/Images/LoginImg/img-35.png';
-// import img5 from '../../assets/Images/LoginImg/img-36.png';
-// import google from '../../assets/Images/IconSvg/google.png';
+import img1 from '../../assets/Images/LoginImg/login1.png';
+import img2 from '../../assets/Images/LoginImg/login2.png';
+import img3 from '../../assets/Images/LoginImg/login3.png';
+import img4 from '../../assets/Images/LoginImg/login4.png';
 import apple from '../../assets/Images/IconSvg/apple.png';
 import facebook from '../../assets/Images/IconSvg/facebook.png';
 import github from '../../assets/Images/IconSvg/github.png';
@@ -100,7 +98,7 @@ const Signup = () => {
             </div>
           </div>
         </div>
-        <div className='grid grid-cols-2 grid-rows-2 gap-3 size-6/12'>
+        <div className='grid grid-cols-2 grid-rows-2 gap-3 size-6/12 mt-8'>
           <div className='row-span-2'>
           <img src={img1} alt='Image 1' className='rounded-lg hover:-translate-y-2 transition-all duration-500 h-full' />    
           </div>
