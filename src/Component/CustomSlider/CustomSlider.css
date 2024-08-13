@@ -1,0 +1,22 @@
+.slick-slide img {
+    transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out;
+    transform: translate(0, 0); /* Initial position */
+  }
+  
+  .slick-slide.slick-current img {
+    transform: translate(0, 0); /* Bring current slide into focus */
+    filter: blur(0); /* Remove blur from the current slide */
+  }
+  
+  .blur-image {
+    filter: blur(8px);
+  }
+  
+  .slick-slide img {
+    transform: translate(0, 0);
+  }
+  
+  .slick-slide:not(.slick-current) img {
+    transform: translate(100px, 100px); /* Larger diagonal offset for non-current slides */
+  }
+  
