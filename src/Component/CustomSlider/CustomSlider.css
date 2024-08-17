@@ -17,6 +17,6 @@
   }
   
   .slick-slide:not(.slick-current) img {
-    transform: translate(100px, 100px); /* Larger diagonal offset for non-current slides */
+    transform: translate(100px, 100px);
   }
   
