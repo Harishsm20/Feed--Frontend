@@ -22,10 +22,9 @@ const CustomSlider = () => {
     <div className="flex flex-col justify-center items-center min-h-full bg-gradient-to-r from-gray-900 to-gray-700 py-12">
       <div className="text-center mb-6">
         <h1 className="text-6xl font-bold text-white">Feed Welcomes you</h1>
-        {/* <h1 className="text-4xl text-white">Idea make fosters brainstorming</h1> */}
         <h2 className="text-xl text-gray-300">Idea make fosters brainstorming and idea generation processes</h2>
       </div>
-      <div className="w-full h-[300px] max-w-4xl min-h-11 overflow-hidden  rounded-xl">
+      <div className="w-full h-[350px] max-w-4xl min-h-11 overflow-hidden  rounded-xl">
         <Slider {...settings} className='min-h-5px'>
           <div className="relative">
             <img src={img1} alt="Image 1" className="rounded-xl shadow-lg object-cover w-full h-full" />
