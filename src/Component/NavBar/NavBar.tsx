@@ -2,10 +2,15 @@
 import { FaSearch } from "react-icons/fa";
 import { BiBookAdd } from "react-icons/bi";
 import { FaBell } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 
 
 const NavBar = () => {
+  const navigate = useNavigate();
+  async function goToBlog() {
+    navigate('/createPost')
+  }
   return (
     <div className='sticky top-0 w-full h-16 mt-2 flex items-center px-5 shadow-xl justify-between'>
       <div>Logo</div>
@@ -14,10 +19,12 @@ const NavBar = () => {
         <input type="text" className="w-full focus:outline-none pl-3" placeholder="Search" /> 
     </div>
     <div className="flex items-center gap-10 text-lg">
-        <div className="flex items-center gap-1">            
+        <button 
+        onClick={() => goToBlog()}
+        className="flex items-center gap-1">            
             <BiBookAdd />
             Blog
-        </div>
+        </button>
         <div>
             <FaBell />
         </div>
