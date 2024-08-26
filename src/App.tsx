@@ -4,6 +4,7 @@ import Signup from './Component/Authentication/Signup'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Profile from './Component/Profile/Profile';
 import Home from './Component/Home/Home';
+import Blog from './Component/CreateBlog/Blog';
 // import { Link } from 'react-router-dom';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
             <Route path="/signup" element={<Signup />} />
             <Route path="/home" element={<Home />} />
             <Route path="/profile" element={<Profile />} />
+            <Route path="/createPost" element={<Blog />} />
         </Routes>
     </Router>
   )
