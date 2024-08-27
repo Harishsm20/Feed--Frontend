@@ -11,8 +11,13 @@ const NavBar = () => {
   async function goToBlog() {
     navigate('/createPost')
   }
+
+  async function goTOProfile(){
+    navigate('/profile')
+  }
+
   return (
-    <div className='sticky top-0 w-full h-16 mt-2 flex items-center px-5 shadow-xl justify-between'>
+    <div className='sticky top-0 bg-white w-full h-16 mt-2 flex items-center px-5 shadow-xl justify-between'>
       <div>Logo</div>
       <div className="flex justify-start px-5 py-2 items-center border border-gray-200 rounded-full shadow-lg w-1/4"> 
         <FaSearch />
@@ -28,9 +33,11 @@ const NavBar = () => {
         <div>
             <FaBell />
         </div>
-        <div className="rounded-full border-2 w-12 h-12 flex items-center justify-center">
+        <button 
+        onClick={() => goTOProfile()}
+        className="rounded-full border-2 w-12 h-12 flex items-center justify-center">
             P
-        </div>
+        </button>
         <a href="/login">
         <div className="flex items-center w-20 justify-center py-2 bg-[#b8a500] text-white rounded-2xl hover:bg-[#e0e0e0] hover:text-[#b8a500] transition duration-500  p-2">
             Sign In
